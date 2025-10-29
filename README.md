@@ -1,7 +1,6 @@
 # 🪐 3I/ATLAS (C/2019 Y4) — Photometric Anomaly 2025
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17477597.svg)](https://doi.org/10.5281/zenodo.17477597)
-> 📦 Archived on Zenodo — [https://doi.org/10.5281/zenodo.17477597](https://doi.org/10.5281/zenodo.17477597)
 [![Reproducible Research](https://img.shields.io/badge/Reproducible%20Research-YES-brightgreen)](#reproducibility)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![OpenTimestamps Verified](https://img.shields.io/badge/Data%20Integrity-OpenTimestamps-orange)](https://opentimestamps.org)
