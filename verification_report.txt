@@ -1,0 +1,130 @@
+============================================================
+3I/ATLAS (C/2019 Y4) — Verification Report
+Generated: 2025-10-29 17:08:55 UTC
+============================================================
+
+Manifest file: anomaly_manifest.txt
+SHA-256 hash:  407edd3de659dc5dc78eaf255579d5bde527767822f5b93c877d5dc896e8a2a6
+
+Timestamp proof file: anomaly_manifest_20251029_1648.ots
+
+Verification status summary:
+File sha256 hash: 1ce7b697d307fe30ba8a5e22773ada63f696e51783526cb69fd02309b2b37830
+Timestamp:
+append 8d1f99881b065d62df978afbcd39e615
+sha256
+ -> append 1864b34d25507afabb8cf8e2c0f2f0e4
+    sha256
+    prepend e0928665ec00f2e311c5219a3f8e56b37d0fc118b49a1fd9fe680c96ecd1e4f4
+    sha256
+    prepend 0b4caf6376cc063bdca69bccb7a88b51a497beabdc3112345491395465d3388e
+    sha256
+    prepend 8f9ac74b2c6228d92ce2033310dc7ba3819d267c5472055a27943dd6aaf68349
+    sha256
+    prepend 6902440c
+    append d42c3cfd2d2fbb74
+    verify PendingAttestation('https://finney.calendar.eternitywall.com')
+ -> append 39160ad880e79b232a811d328c46a3f7
+    sha256
+    append a4abb02865fc207d3e23c56004ab5462b348fc12aefdc9eb4dda6e298baa11ed
+    sha256
+    prepend 4160f9f72d2e225798dd2cadd807eff265c1517c9ba1f13d14d431c49c361932
+    sha256
+    prepend 6902440c
+    append e19eced6bd328d0a
+    verify PendingAttestation('https://btc.calendar.catallaxy.com')
+ -> append 73a021fd15eb1a47
+    sha256
+    prepend bf1c390391d6e3ab310af4d14edc80bfc3fbd744d41d2a01c5bc936dce0be399
+    sha256
+    append 514d8d27f58ce22e8966b763e71d62a0
+    sha256
+    prepend 4457c729d40da7f1a85fed03bbcf439948d69d0e5d8c799e89562f4f6a84180e
+    sha256
+    prepend 7fbed942651a47b2a68eabb957d2c8d05b695f602c70e4ff37321908d6d45025
+    sha256
+    append a5427265f051fd1889a5240b679467f42829c356defbb2588d0e06bd61518c0d
+    sha256
+    prepend 6902440c
+    append 3e79e2a696df85f2
+    verify PendingAttestation('https://alice.btc.calendar.opentimestamps.org')
+ -> append 809b3bc79114f52f
+    sha256
+    prepend c705f23966dfca79433c0537d89e41741c8944d868687f2d75be27bb695559e3
+    sha256
+    append 5f8f055ba95a65b67a3c69694cfd0f2f
+    sha256
+    prepend a18bed83046104189304138a42272a0dfda255968da03e55e9bf9a3f5f30bafd
+    sha256
+    prepend 17777c75c5658aa2631e824a8aa84d3fcb07a52d0d9b401a855e724878468835
+    sha256
+    append 374022f34b96032d4c73a4a422d7c5e1ce0448ce6694c98131d820fc5bdf5ac0
+    sha256
+    prepend 6902440c
+    append 65182b076dcc291d
+    verify PendingAttestation('https://bob.btc.calendar.opentimestamps.org')
+
+
+
+To verify independently at any future date:
+    ots verify anomaly_manifest_20251029_1648.ots
+
+Successful verification confirms that the dataset
+described in 'anomaly_manifest.txt' existed and has not
+been altered since its timestamp creation on 2025-10-29 UTC.
+============================================================
+
+
+--- Updated verification 2025-10-29 17:35:47 UTC ---
+File sha256 hash: d9e483bf13c2a47296ad5c2564381dd669588b3b042ad5bf9ec1ed5f09c13b94
+Timestamp:
+append 26dcff1a7b14ba39a6cbebf6dd07b45b
+sha256
+ -> append 1ebb5d65bcfe290d
+    sha256
+    prepend 660445540a9f6bd4383ec21c5e9b0a040331e146d4be017758a9b8bfb148b243
+    sha256
+    append 8c2d1b023a013a046d69d3213133af2f
+    sha256
+    prepend c8dd739152b65f2000d6ff6b0b5ea9b0e7c2fc70a0969e9663029f44861c6313
+    sha256
+    append abb927dbf2a1dceb4b9150a12b5d7ee2a4addcf8675e9da4b7308e0457aa352e
+    sha256
+    prepend 6902504f
+    append e26a29a274f73a6c
+    verify PendingAttestation('https://bob.btc.calendar.opentimestamps.org')
+ -> append 368ed2f416fbc358c9e3d96db7c4791f
+    sha256
+    prepend bdbda2261e98b9d7bcc1b8b4a0d528470c030e40ba22ba61f7343e86354938e6
+    sha256
+    prepend 6350ffe1202eafc8e6287cd59433e4ef02565c9e7639781e7559a5ed3acdccfe
+    sha256
+    append a9d5a3faf9371fdc510929c1af1d0def0062094ecdf531696b787969501bcb53
+    sha256
+    prepend 6902504f
+    append caf38b87933df2e1
+    verify PendingAttestation('https://finney.calendar.eternitywall.com')
+ -> append 4077b653c07bb6b7c39d4e02a7e17d6e
+    sha256
+    append a53cc1c7eb849778acf1b08c81c4b9c6fef6855be94555c8381909b46bdeeede
+    sha256
+    append edf860f36c2a23abbefe0ee3fa0e392191145b768bab9349906a0c82ee7755ff
+    sha256
+    prepend 6902504f
+    append 4eefe3835362eac9
+    verify PendingAttestation('https://btc.calendar.catallaxy.com')
+ -> append df3f47c2b82cdd24
+    sha256
+    prepend 2fbfd4e7da6ae7f69dda75f1e5370dc7a680262cf028a00f5d33fd04b2826be2
+    sha256
+    append f8b7e749ae1612e8a7ca3f28990dc6df
+    sha256
+    prepend b125c00dbfb457abc44c46cff4268b904fbf3ed3c2d600947b5113dd7f15aeba
+    sha256
+    append a2e969b295165d009fd5f306fa68291eee77fb6a519ff3f2ea0d0c938b1f6b20
+    sha256
+    prepend 6902504f
+    append 063f7bf34e9f33ac
+    verify PendingAttestation('https://alice.btc.calendar.opentimestamps.org')
+
+
