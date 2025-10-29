@@ -277,3 +277,9 @@ scratch/
 *.lock
 *.bak
 
+# Exclude local timestamp proofs or temp work
+*.ots~
+*.asc
+*.log
+test/
+tmp/
