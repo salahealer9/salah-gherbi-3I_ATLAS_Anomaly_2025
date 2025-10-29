@@ -205,3 +205,75 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# ---------------------------------------------------------
+# Python / Virtual Environment
+# ---------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+venv/
+.env/
+.venv/
+ENV/
+
+# ---------------------------------------------------------
+# Temporary / Cache / Logs
+# ---------------------------------------------------------
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+.cache/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------
+# Build / Packaging
+# ---------------------------------------------------------
+build/
+dist/
+*.egg
+*.manifest
+*.spec
+
+# ---------------------------------------------------------
+# Output / Intermediate Data
+# ---------------------------------------------------------
+# Keep only the final verified dataset, not raw test runs
+test/
+tmp/
+scratch/
+*.out
+*.old
+*.csv~
+*.png~
+*.pdf~
+*.zip
+
+# ---------------------------------------------------------
+# Security / Privacy
+# ---------------------------------------------------------
+# Exclude local GPG keys, timestamps, and internal configs
+*.asc
+*.ots~
+*.gpg
+*.key
+*.pem
+*.crt
+
+# ---------------------------------------------------------
+# Linux / OS / Editor Artifacts
+# ---------------------------------------------------------
+*~
+*.kate-swp
+*.viminfo
+*.lock
+*.bak
+
