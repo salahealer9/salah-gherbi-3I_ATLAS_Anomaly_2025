@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this dataset or analysis, please cite it as below."
+authors:
+  - family-names: "Gherbi"
+    given-names: "Salah-Eddin"
+    orcid: "https://orcid.org/0009-0005-4017-1095"
+title: "3I/ATLAS (C/2019 Y4) — Photometric Anomaly 2025"
+version: "1.0"
+date-released: "2025-10-29"
+doi: "10.5281/zenodo.17477597"
+repository-code: "https://github.com/salah-gherbi/3I_ATLAS_Anomaly_2025"
+license: "CC-BY-4.0"
+type: dataset
+abstract: >
+  Processed photometric dataset and analysis files documenting the July–October 2025
+  brightening anomaly of interstellar object 3I/ATLAS (C/2019 Y4), derived from Minor
+  Planet Center records and verified via OpenTimestamps blockchain anchoring.
+keywords:
+  - 3I/ATLAS
+  - C/2019 Y4
+  - photometric anomaly
+  - comet brightening
+  - interstellar object
+  - Minor Planet Center
+  - blockchain verification
+  - open science
