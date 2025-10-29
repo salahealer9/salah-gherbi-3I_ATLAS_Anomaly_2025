@@ -1,0 +1,15 @@
+name: atlas-anomaly-2025
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # --- Core scientific libraries ---
+  - python>=3.11
+  - pandas>=2.0
+  - matplotlib>=3.8
+  - numpy>=1.25
+
+  # --- Optional: verification and utility tools ---
+  - pip
+  - pip:
+      - opentimestamps-client>=0.7.0
