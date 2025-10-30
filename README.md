@@ -131,6 +131,6 @@ Independent Researcher — United Kingdom
 ---
 
 **Repository:** [https://github.com/salahealer9/salah-gherbi-3I_ATLAS_Anomaly_2025](https://github.com/salahealer9/salah-gherbi-3I_ATLAS_Anomaly_2025)  
-**Zenodo DOI (v2.1):** [https://doi.org/10.5281/zenodo.17487610](ttps://doi.org/10.5281/zenodo.17487610)
+**Zenodo DOI (v2.1):** [https://doi.org/10.5281/zenodo.17487610](https://doi.org/10.5281/zenodo.17487610)  
 **Concept DOI (all versions):** [https://doi.org/10.5281/zenodo.17477597](https://doi.org/10.5281/zenodo.17477597)
 
