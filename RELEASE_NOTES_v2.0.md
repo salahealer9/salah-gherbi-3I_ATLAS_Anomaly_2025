@@ -31,6 +31,20 @@ The residuals consistently indicate intrinsic physical activity, likely due to s
 3I/ATLAS (C/2019 Y4) — Photometric Anomaly 2025 (v2.0: JPL Horizons Comparison).  
 Zenodo. https://doi.org/10.5281/zenodo.17483027
 
+## 📘 BibTeX
+
+```bibtex
+@dataset{gherbi_3I_ATLAS_anomaly2025_v21,
+  author       = {Salah-Eddin Gherbi},
+  title        = {3I/ATLAS (C/2019 Y4) — JPL Horizons Comparison},
+  year         = {2025},
+  publisher    = {Zenodo},
+  version      = {v2.1},
+  doi          = {10.5281/zenodo.17483027},
+  url          = {https://doi.org/10.5281/zenodo.17483027}
+}
+```
+
 ## 🛡️ Verification
 
 All data files, figures, and scripts are SHA-256–verified and timestamp-anchored to the Bitcoin blockchain via OpenTimestamps for permanent, reproducible authenticity.
