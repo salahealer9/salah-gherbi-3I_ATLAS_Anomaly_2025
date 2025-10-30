@@ -1,10 +1,11 @@
 # 🪐 3I/ATLAS (C/2019 Y4) — Photometric Anomaly 2025
+📦 **Version 2 released:** Extended dataset with JPL Horizons comparison (October 2025)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17477597.svg)](https://doi.org/10.5281/zenodo.17477597)
-[![Reproducible Research](https://img.shields.io/badge/Reproducible%20Research-YES-brightgreen)](#reproducibility)
-[![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/salah-gherbi/3I_ATLAS_Anomaly_2025/main)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![OpenTimestamps Verified](https://img.shields.io/badge/Data%20Integrity-OpenTimestamps-orange)](https://opentimestamps.org)
+[![Reproducible Research](https://img.shields.io/badge/Reproducible%20Research-YES-brightgreen)](#reproducibility)
+[![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/salah-gherbi/3I_ATLAS_Anomaly_2025/main)
 
 ---
 
@@ -104,7 +105,10 @@ The manifest and its .ots proofs ensure permanent, blockchain-verifiable authent
 
 ## Citation
 
-Gherbi, Salah-Eddin (2025). 3I/ATLAS (C/2019 Y4) Photometric Anomaly 2025 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17477597
+Gherbi, Salah-Eddin (2025).  
+**3I/ATLAS (C/2019 Y4) — Photometric Anomaly 2025 (v2.0: JPL Horizons Comparison).**  
+Zenodo. [https://doi.org/10.5281/zenodo.17483027](https://doi.org/10.5281/zenodo.17483027)  
+**Concept DOI:** [https://doi.org/10.5281/zenodo.17477597](https://doi.org/10.5281/zenodo.17477597)
 
 ---
 
@@ -124,5 +128,7 @@ Independent Researcher — United Kingdom
 
 ---
 
-**Repository:** https://github.com/salah-gherbi/3I_ATLAS_Anomaly_2025  
-**Zenodo DOI:** https://doi.org/10.5281/zenodo.17477597
+**Repository:** [https://github.com/salah-gherbi/3I_ATLAS_Anomaly_2025](https://github.com/salah-gherbi/3I_ATLAS_Anomaly_2025)  
+**Zenodo DOI (v2.0):** [https://doi.org/10.5281/zenodo.17483027](https://doi.org/10.5281/zenodo.17483027)  
+**Concept DOI (all versions):** [https://doi.org/10.5281/zenodo.17477597](https://doi.org/10.5281/zenodo.17477597)
+
