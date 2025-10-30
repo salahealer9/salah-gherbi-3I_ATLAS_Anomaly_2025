@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this dataset or analysis, please cite it as below."
+authors:
+  - family-names: "Gherbi"
+    given-names: "Salah-Eddin"
+    orcid: "https://orcid.org/0009-0005-4017-1095"
+title: "3I/ATLAS (C/2019 Y4) Photometric Anomaly 2025 — Version 2.1: ZTF Cross-Validation"
+version: "2.1"
+doi: "10.5281/zenodo.17487610"
+date-released: "2025-10-30"
+repository-code: "https://github.com/salah-gherbi/3I_ATLAS_Anomaly_2025"
+license: "CC-BY-4.0"
+type: dataset
+abstract: >
+  Extended release adding cross-validation against Zwicky Transient Facility (ZTF DR19)
+  photometry via IRSA TAP. No independent ZTF detections were found for 3I/ATLAS during
+  July–October 2025, confirming MPC photometry as the sole observational record of the
+  brightening anomaly. Includes updated verification report, new OpenTimestamps proof,
+  and revised integrity manifest. All files are cryptographically verified and 
+  timestamp-anchored to the Bitcoin blockchain.
+keywords:
+  - 3I/ATLAS
+  - C/2019 Y4
+  - photometric anomaly
+  - comet brightening
+  - interstellar object
+  - Minor Planet Center
+  - ZTF DR19
+  - cross-validation
+  - blockchain verification
+  - open science
