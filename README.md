@@ -1,5 +1,5 @@
 # 🪐 3I/ATLAS (C/2019 Y4) — Photometric Anomaly 2025
-📦 **Version 2 released:** Extended dataset with JPL Horizons comparison (October 2025)
+📦 **Version 2.1 released:** Includes ZTF cross-validation and updated verification (October 2025)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17477597.svg)](https://doi.org/10.5281/zenodo.17477597)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
@@ -22,17 +22,19 @@ All results are **cryptographically verified** and timestamp-anchored via the **
 ## Contents
 
 | File | Description |
-|------|--------------|
+|------|-------------|
 | `I3.txt` | Raw MPC observation records for 3I/ATLAS (C/2019 Y4) |
 | `I3_clean.csv` | Parsed observation table (date, RA, Dec, magnitude) |
 | `I3_monthly_summary.csv` | Monthly photometric statistics |
 | `I3_lightcurve.png` | Light-curve plot of mean magnitude vs month |
 | `I3_ATLAS_Dual_Anomaly.png` | Comparative July–October brightness diagram |
-| `print_summary.py` | Python script for parsing, summarizing, and plotting |
-| `anomaly_manifest.txt` | SHA-256 checksum manifest for all files |
-| `anomaly_manifest.txt.ots` | OpenTimestamps proof anchoring manifest to Bitcoin |
-| `verification_report.txt` | Human-readable timestamp verification log |
-| `README.md` | This documentation file |
+| `I3_ATLAS_Horizons_Normalized.png` | Observed vs JPL Horizons normalized comparison |
+| `compare_horizons_anomaly.py` | Comparison script for MPC vs JPL predicted magnitudes |
+| `compare_ztf_I3_ATLAS.py` | Attempted MPC vs ZTF DR19 cross-validation |
+| `I3_MPC_Only.png` | Fallback plot when no ZTF detections found |
+| `anomaly_manifest.txt` | SHA-256 checksum manifest |
+| `anomaly_manifest_20251030_v21.ots` | Current blockchain proof |
+| `verification_report.txt` | Consolidated integrity verification log |
 
 ---
 
@@ -106,8 +108,8 @@ The manifest and its .ots proofs ensure permanent, blockchain-verifiable authent
 ## Citation
 
 Gherbi, Salah-Eddin (2025).  
-**3I/ATLAS (C/2019 Y4) — Photometric Anomaly 2025 (v2.0: JPL Horizons Comparison).**  
-Zenodo. [https://doi.org/10.5281/zenodo.17483027](https://doi.org/10.5281/zenodo.17483027)  
+**3I/ATLAS (C/2019 Y4) — Photometric Anomaly 2025 (v2.1: ZTF Cross-Validation).**  
+**Zenodo DOI (v2.1):** [https://doi.org/10.5281/zenodo.17487610](ttps://doi.org/10.5281/zenodo.17487610)  
 **Concept DOI:** [https://doi.org/10.5281/zenodo.17477597](https://doi.org/10.5281/zenodo.17477597)
 
 ---
@@ -129,6 +131,6 @@ Independent Researcher — United Kingdom
 ---
 
 **Repository:** [https://github.com/salahealer9/salah-gherbi-3I_ATLAS_Anomaly_2025](https://github.com/salahealer9/salah-gherbi-3I_ATLAS_Anomaly_2025)  
-**Zenodo DOI (v2.0):** [https://doi.org/10.5281/zenodo.17483027](https://doi.org/10.5281/zenodo.17483027)  
+**Zenodo DOI (v2.1):** [https://doi.org/10.5281/zenodo.17487610](ttps://doi.org/10.5281/zenodo.17487610)
 **Concept DOI (all versions):** [https://doi.org/10.5281/zenodo.17477597](https://doi.org/10.5281/zenodo.17477597)
 
