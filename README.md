@@ -1,5 +1,5 @@
 # 🪐 3I/ATLAS (C/2019 Y4) — Photometric Anomaly 2025
-📦 **Version 2.1 released:** Includes ZTF cross-validation and updated verification (October 2025)
+📦 **Version 2.2 released:** Optical acceleration meets chromatic evolution - the first integrated photometric signature of interstellar activity.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17477597.svg)](https://doi.org/10.5281/zenodo.17477597)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
