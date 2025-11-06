@@ -1,7 +1,8 @@
 # 🪐 3I/ATLAS (C/2019 Y4) — Photometric Anomaly 2025
-📦 **Version 2.2 released:** Optical acceleration meets chromatic evolution - the first integrated photometric signature of interstellar activity.
+📦 **Version 2.3 released:** Spectral Transition, Post-Perihelion Evolution and Time-Series Refinement.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17477597.svg)](https://doi.org/10.5281/zenodo.17477597)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17538229.svg)](https://doi.org/10.5281/zenodo.17538229)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![OpenTimestamps Verified](https://img.shields.io/badge/Data%20Integrity-OpenTimestamps-orange)](https://opentimestamps.org)
 [![Reproducible Research](https://img.shields.io/badge/Reproducible%20Research-YES-brightgreen)](#reproducibility)
@@ -108,8 +109,8 @@ The manifest and its .ots proofs ensure permanent, blockchain-verifiable authent
 ## Citation
 
 Gherbi, Salah-Eddin (2025).  
-**3I/ATLAS (C/2019 Y4) — Photometric Anomaly 2025 (v2.1: ZTF Cross-Validation).**  
-**Zenodo DOI (v2.1):** [https://doi.org/10.5281/zenodo.17487610](ttps://doi.org/10.5281/zenodo.17487610)  
+**3I/ATLAS (C/2019 Y4) — Photometric Anomaly 2025 (v2.3: Spectral Transition and Post-Perihelion Evolution).**  
+**Zenodo DOI (v2.3):** [https://doi.org/10.5281/zenodo.17538229](ttps://doi.org/10.5281/zenodo.17538229)  
 **Concept DOI:** [https://doi.org/10.5281/zenodo.17477597](https://doi.org/10.5281/zenodo.17477597)
 
 ---
@@ -130,7 +131,7 @@ Independent Researcher — United Kingdom
 
 ---
 
-**Repository:** [https://github.com/salahealer9/salah-gherbi-3I_ATLAS_Anomaly_2025](https://github.com/salahealer9/salah-gherbi-3I_ATLAS_Anomaly_2025)  
-**Zenodo DOI (v2.1):** [https://doi.org/10.5281/zenodo.17487610](https://doi.org/10.5281/zenodo.17487610)  
+**Repository:** [https://github.com/salahealer9/salah-gherbi-3I_ATLAS_Anomaly_2025](https://github.com/salahealer9/salah-gherbi-3I_ATLAS_Anomaly_2025)     
+**Zenodo DOI (v2.3):** [https://doi.org/10.5281/zenodo.17538229](https://doi.org/10.5281/zenodo.17538229)  
 **Concept DOI (all versions):** [https://doi.org/10.5281/zenodo.17477597](https://doi.org/10.5281/zenodo.17477597)
 
