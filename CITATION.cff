@@ -4,28 +4,30 @@ authors:
   - family-names: "Gherbi"
     given-names: "Salah-Eddin"
     orcid: "https://orcid.org/0009-0005-4017-1095"
-title: "3I/ATLAS (C/2025 N1) Photometric–Chromatic Anomaly: Optical Acceleration Analysis and Timestamped Dataset"
-version: "2.2"
-doi: "10.5281/zenodo.17503806"
-date-released: "2025-11-01"
+title: "3I/ATLAS (C/2025 N1) Photometric–Chromatic Anomaly: Optical Acceleration and Multi-Observatory Validation"
+version: "2.4"
+doi: "10.5281/zenodo.17609914"
+date-released: "2025-11-14"
 repository-code: "https://github.com/salahealer9/salah-gherbi-3I_ATLAS_Anomaly_2025"
 license: "CC-BY-NC-4.0"
 type: dataset
 abstract: >
-  Version 2.2 introduces the first joint photometric–chromatic analysis of interstellar object 3I/ATLAS (C/2025 N1),
-  combining Minor Planet Center (MPC) photometry with derived optical acceleration proxies.
-  The results reveal a pre-perihelion acceleration event (~2025-09-10) coinciding with a reddening
-  of the g–o color index (Δ ≈ +0.57 mag), suggesting a compositional or outgassing transition.
-  All datasets, figures, and scripts are cryptographically timestamped using OpenTimestamps and signed via GPG,
-  ensuring verifiable provenance and reproducibility.
+  Version 2.4 extends the photometric-chromatic analysis of interstellar object 3I/ATLAS (C/2025 N1)
+  with complete Minor Planet Center coverage through 2025-11-13 (4,413 observations). The analysis reveals
+  a full activity cycle from pre-perihelion optical acceleration (peak: 2025-10-02) to post-perihelion
+  deceleration, validated by independent morphological evidence from Nordic Optical Telescope imaging.
+  The optical acceleration proxy demonstrates ~4-week early detection capability compared to orbital
+  non-gravitational solutions. All datasets, scripts, and verification artefacts are cryptographically
+  timestamped via OpenTimestamps (Bitcoin blockchain) and GPG-signed for complete reproducibility.
 keywords:
   - 3I/ATLAS
   - C/2025 N1
   - interstellar object
-  - photometry
-  - color evolution
+  - photometric analysis
   - optical acceleration
   - non-gravitational forces
   - Minor Planet Center
+  - Nordic Optical Telescope
+  - morphological validation
   - blockchain timestamping
-  - open science
+  - reproducible research
