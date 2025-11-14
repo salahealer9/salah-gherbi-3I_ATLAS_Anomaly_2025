@@ -1,8 +1,9 @@
 # 🪐 3I/ATLAS (C/2019 Y4) — Photometric Anomaly 2025
-📦 **Version 2.3 released:** Spectral Transition, Post-Perihelion Evolution and Time-Series Refinement.
+📦 **Version 2.4 released:** Extended Photometry, Revised Pre-Perihelion Peak, and Post-Perihelion Deceleration  
+🧪 Includes NOT Morphological Validation, full MPC photometry to 2025-11-13, and updated cryptographic proofs.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17477597.svg)](https://doi.org/10.5281/zenodo.17477597)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17538229.svg)](https://doi.org/10.5281/zenodo.17538229)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17609914.svg)](https://doi.org/10.5281/zenodo.17609914)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![OpenTimestamps Verified](https://img.shields.io/badge/Data%20Integrity-OpenTimestamps-orange)](https://opentimestamps.org)
 [![Reproducible Research](https://img.shields.io/badge/Reproducible%20Research-YES-brightgreen)](#reproducibility)
@@ -12,106 +13,152 @@
 
 ## Overview
 
-This repository contains the dataset and analysis associated with the **photometric brightening anomaly** of *3I/ATLAS (C/2019 Y4)* observed between **July and October 2025**.  
-The raw photometric data were extracted from the **Minor Planet Center (MPC)** file `I3.txt` and processed using `print_summary.py` to generate monthly brightness statistics and light-curve figures.
+This repository contains the full photometric and chromatic analysis of the interstellar object **3I/ATLAS (C/2025 N1)** spanning **4,413 Minor Planet Center observations** from **2025-05-08 → 2025-11-13**.
 
-The object exhibited a steady increase in brightness of **Δm ≈ 4.2 mag** (≈ ×47 flux), far exceeding geometric expectations.  
-All results are **cryptographically verified** and timestamp-anchored via the **Bitcoin blockchain** using **OpenTimestamps**.
+The analysis reveals:
+
+- ✔️ **A revised pre-perihelion optical activity peak**  
+  **2025-10-02 (±1 day)**, derived from the time derivative of the inverse magnitude.
+
+- ✔️ **A strong reddening event in \( g - o \)**  
+  \( \Delta(g-o) \approx +0.7 \) mag during July–Sept, coincident with the optical acceleration.
+
+- ✔️ **A post-perihelion deceleration phase**  
+  Observed between 2025-11-01 and 11-13.
+
+- ✔️ **No cometary tail or fragmentation**  
+  Confirmed independently by the 2.6-m Nordic Optical Telescope (2025-11-09).
+
+- ✔️ **Complete cryptographic provenance**  
+  All datasets, figures, CSVs, and scripts are sealed with:
+  - SHA-256 manifests
+  - GPG signatures
+  - Bitcoin-anchored OpenTimestamps proofs
+
+Version 2.4 supersedes v2.3 and presents the most complete optical record of 3I/ATLAS to date.
 
 ---
 
 ## Contents
 
-| File | Description |
-|------|-------------|
-| `I3.txt` | Raw MPC observation records for 3I/ATLAS (C/2019 Y4) |
-| `I3_clean.csv` | Parsed observation table (date, RA, Dec, magnitude) |
-| `I3_monthly_summary.csv` | Monthly photometric statistics |
-| `I3_lightcurve.png` | Light-curve plot of mean magnitude vs month |
-| `I3_ATLAS_Dual_Anomaly.png` | Comparative July–October brightness diagram |
-| `I3_ATLAS_Horizons_Normalized.png` | Observed vs JPL Horizons normalized comparison |
-| `compare_horizons_anomaly.py` | Comparison script for MPC vs JPL predicted magnitudes |
-| `compare_ztf_I3_ATLAS.py` | Attempted MPC vs ZTF DR19 cross-validation |
-| `I3_MPC_Only.png` | Fallback plot when no ZTF detections found |
-| `anomaly_manifest.txt` | SHA-256 checksum manifest |
-| `anomaly_manifest_20251030_v21.ots` | Current blockchain proof |
-| `verification_report.txt` | Consolidated integrity verification log |
+| File / Folder                          | Description |
+|----------------------------------------|-------------|
+| `I3.txt`                               | Full MPC photometry (4,413 lines) |
+| `I3_Optical_Acceleration_Data.csv`     | Photometric activity proxy |
+| `I3_Color_Alerts_*.csv`                | Colour-index pairs (g–o, r–o) |
+| `I3_Color_Statistics_*.txt`            | Monthly/epochal colour analysis |
+| `I3_Optical_Acceleration_Trend_v2.png` | Updated optical acceleration plot |
+| `I3_Optical_Color_Correlation.png`     | Pre-perihelion optical–chromatic coupling |
+| `I3_Optical_Color_Correlation_postperi.png` | Post-perihelion deceleration |
+| `NOTpictures.pdf`                      | 4-panel NOT morphology analysis |
+| `atlas_optical_acceleration_v2.py`     | Activity proxy extractor |
+| `atlas_optical_color_correlation_v1.py`| Optical–colour coupling analysis |
+| `watch_mpc_colors_plot_v8_4.py`        | Colour-index extraction + alerts |
+| `update_I3_data.sh`                    | Automated MPC fetch + manifest + proofs |
+| `RUN_LOG.md`                           | Full timestamped run history (SHA-256 + OTS) |
+| `*_proof.txt, .asc, .ots`              | Cryptographic proofs |
 
 ---
 
-## Results Summary
+## 🔍 Scientific Results (v2.4)
 
-| Month (2025) | Mean Mag | Std | Count | Notes |
-|---------------|-----------|------|--------|--------|
-| July | 17.30 ± 1.0 | 1594 | Baseline faint phase |
-| August | 16.34 ± 0.6 | 836 | Gradual brightening |
-| September | 15.01 ± 0.8 | 246 | Continued increase |
-| October | 13.11 ± 0.6 | 15 | Post-conjunction reactivation |
+### ⭐ 1. Pre-Perihelion Optical Acceleration Peak
 
-**Δm = 4.19 mag → Flux increase ≈ ×47.5**
+- Peak detected at **2025-10-02**
+- Photometric activity increases smoothly from **July → Oct**
+- Acceleration proxy rises by **~10⁻³ (scaled units)**
 
-This sustained brightening exceeds geometric expectations and suggests **intrinsic physical activity**, likely volatile release or reactivation following solar conjunction.
+### ⭐ 2. Colour Reddening (July–Sept)
+
+| Month | Mean g–o | Δ vs Solar | Interpretation |
+|-------|----------|------------|----------------|
+| July  | 0.61     | ~0         | Neutral / icy reflection |
+| Aug   | 0.94     | +0.32      | Dust/organic activation |
+| Sept  | 1.34     | +0.72      | Peak reddening |
+
+### ⭐ 3. Post-Perihelion Deceleration (Nov)
+
+- Optical acceleration turns **negative**
+- Magnitude increases by **+0.07 mag** since perihelion
+- Represents declining activity + dust coma clearing
+
+### ⭐ 4. NOT Morphology (2025-11-09)
+
+- No tail
+- No coma asymmetry
+- No fragmentation
+- Stellar point-source morphology
+
+→ Confirms a short-lived, transient activity incompatible with a typical comet.
 
 ---
 
-## Reproducibility
+## ▶️ Reproducing the Analysis
 
-Re-run the full analysis:
+Full pipeline:
 
 ```bash
-python3 print_summary.py
+./update_I3_data.sh
+python atlas_optical_acceleration_v2.py
+python atlas_optical_color_correlation_v1.py
 ```
 
-Outputs:
+This generates:
 
-- I3_monthly_summary.csv (monthly stats)
-- I3_lightcurve.png (light-curve figure)
-- printed summary in terminal
+Colour alerts
+Optical acceleration data
+Pre/post-perihelion plots
+New manifest + signatures
+OpenTimestamps Bitcoin anchoring
 
 Requirements:
 
 ```bash
-pip install pandas matplotlib
+pip install pandas numpy matplotlib scipy
 ```
 
 ---
 
-## Verification & Integrity
+## 🔐 Data Integrity & Blockchain Verification
 
-All files are protected by SHA-256 checksums and timestamp-anchored via OpenTimestamps.
+Each analysis run creates the following verification files:
 
+### 📄 Generated Files
+- **`manifest_v2_4.txt`** - SHA-256 hashes of all data files
+- **`manifest_v2_4.txt.asc`** - GPG signature file
+- **`manifest_v2_4.txt.ots`** - Bitcoin timestamp proof via OpenTimestamps
+- **`RUN_LOG.md`** - Complete audit trail with timestamps
+
+### ✅ Verification Commands
+
+#### Verify SHA-256 checksums
 ```bash
-sha256sum -c anomaly_manifest.txt
-ots verify anomaly_manifest.txt.ots
+sha256sum -c manifest_v2_4.txt
+```
+
+#### Verify GPG signature authenticity
+```bash
+gpg --verify manifest_v2_4.txt.asc
+```
+
+#### Verify Bitcoin blockchain timestamp
+```bash
+ots verify manifest_v2_4.txt.ots
 ```
 
 Any alteration will invalidate the hashes and cause verification to fail.
-The manifest and its .ots proofs ensure permanent, blockchain-verifiable authenticity (timestamp ≈ 2025-10-29 UTC).
+The manifest and its .ots proofs ensure permanent, blockchain-verifiable authenticity (timestamp ≈ 2025-11-14 UTC).
 
 ---
 
-## Integrity Footer (SHA-256 Hashes)
+## 📄 Citation (Version 2.4)
 
-| File | SHA-256 |
-|------|---------|
-| `I3.txt` | `4da6ddcb94a7c7cba37ac226133ce0f1fd36acc34fa2a6a12ff2c77d61bfab35` |
-| `I3_clean.csv` | `b5102800a8b520438bb7a4640ae8bb09605ba1a15df1b92e515f880be3cf724e` |
-| `I3_monthly_summary.csv` | `e3182f0d46c9a75f8fdd5c971b44443fe85ac4029feda9fde2e6db04a587a2d8` |
-| `I3_lightcurve.png` | `20f671c9e68720bbd0dc0bb27690ed99fe420e7f1b5f0e9df4b8609edc913991` |
-| `I3_ATLAS_Dual_Anomaly.png` | `49ae2fd2cd7c7432117ddbeded171c071d7a92930427c010522e6087e97327ac` |
-| `print_summary.py` | `599f3f619e2567b077a06442028e42f77caa69e5b1d9a030fb83084aa0c426eb` |
-| `README.md` | `271b71c869c1c93d4690325b1fac99bf8eaf120b3b64daeb6edcacb5bea1cce6` |
-| `anomaly_manifest.txt` | `407edd3de659dc5dc78eaf255579d5bde527767822f5b93c877d5dc896e8a2a6` |
-| `anomaly_manifest.txt.ots` | `1ce7b697d307fe30ba8a5e22773ada63f696e51783526cb69fd02309b2b37830` |
+Gherbi, Salah-Eddin (2025).
+*3I/ATLAS Photometric–Chromatic Anomaly (2025): Extended Photometry and Post-Perihelion Deceleration.*
+Zenodo. DOI: 10.5281/zenodo.17609914
 
----
-
-## Citation
-
-Gherbi, Salah-Eddin (2025).  
-**3I/ATLAS (C/2019 Y4) — Photometric Anomaly 2025 (v2.3: Spectral Transition and Post-Perihelion Evolution).**  
-**Zenodo DOI (v2.3):** [https://doi.org/10.5281/zenodo.17538229](ttps://doi.org/10.5281/zenodo.17538229)  
-**Concept DOI:** [https://doi.org/10.5281/zenodo.17477597](https://doi.org/10.5281/zenodo.17477597)
+Concept DOI (all versions):
+10.5281/zenodo.17477597
 
 ---
 
@@ -132,6 +179,6 @@ Independent Researcher — United Kingdom
 ---
 
 **Repository:** [https://github.com/salahealer9/salah-gherbi-3I_ATLAS_Anomaly_2025](https://github.com/salahealer9/salah-gherbi-3I_ATLAS_Anomaly_2025)     
-**Zenodo DOI (v2.3):** [https://doi.org/10.5281/zenodo.17538229](https://doi.org/10.5281/zenodo.17538229)  
+**Zenodo DOI (v2.4):** [https://doi.org/10.5281/zenodo.17609914](https://doi.org/10.5281/zenodo.17609914)  
 **Concept DOI (all versions):** [https://doi.org/10.5281/zenodo.17477597](https://doi.org/10.5281/zenodo.17477597)
 
