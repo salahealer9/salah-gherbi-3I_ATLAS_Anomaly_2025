@@ -1,0 +1,73 @@
+============================================================
+3I / ATLAS (C/2025 N1) — Photometric & Chromatic Analysis
+Version 2.4 — November 2025
+Author: Salah-Eddin Gherbi
+ORCID: 0009-0005-4017-1095
+Repository: https://github.com/salahealer9/salah-gherbi-3I_ATLAS_Anomaly_2025
+Version DOI: 10.5281/zenodo.17609914
+Concept DOI:  10.5281/zenodo.17477597
+============================================================
+
+This manifest lists all files included in Version 2.4 of the dataset.
+Per-run cryptographic proofs (SHA256, GPG, OpenTimestamps) are contained in
+the included "ProofBundle" ZIP archives and corresponding proof files.
+
+------------------------------------------------------------
+📦 Core Data Products
+------------------------------------------------------------
+I3.txt                                — Raw MPC photometry
+I3_color_*.csv                        — Color index pairs (g-o, g-r, r-o)
+I3_color_statistics_*.txt            — Color Δ vs solar baseline
+I3_color_brightness_timeline_*.png   — Multi-filter light-curve timeline
+
+------------------------------------------------------------
+📊 Optical Diagnostics
+------------------------------------------------------------
+I3_Optical_Acceleration_Data.csv
+I3_Optical_Acceleration_Trend_v2.png
+I3_Optical_Color_Correlation.png
+I3_Optical_Color_Correlation_postperi.png
+
+------------------------------------------------------------
+🔐 Proof & Integrity Files
+------------------------------------------------------------
+I3_Color_Proof_*.txt         — SHA-256 digests per run
+I3_Color_Proof_*.txt.asc     — GPG detached signatures
+I3_Color_Proof_*.txt.ots     — OpenTimestamps (Bitcoin) proofs
+RUN_LOG.md                   — Chronological record of all runs
+CITATION.cff                 — Citation metadata (updated for v2.4)
+manifest_v2_4.txt            — This file
+
+------------------------------------------------------------
+⚙️ Supporting Scripts
+------------------------------------------------------------
+watch_mpc_colors_plot_v8_4.py
+atlas_optical_acceleration_v2.py
+atlas_optical_color_correlation_v1.py
+update_I3_data.sh
+append_run_log_v3.sh
+check_mpc_update.sh
+cleanup_old_runs.sh
+weekly_status.sh
+
+------------------------------------------------------------
+🔒 Reproducibility Chain
+------------------------------------------------------------
+All files are authenticated using:
+• SHA-256 checksums
+• GPG signatures
+• OpenTimestamps (Bitcoin blockchain)
+
+Verification:
+sha256sum -c I3_Color_Proof_*.txt
+gpg --verify I3_Color_Proof_*.txt.asc
+ots verify I3_Color_Proof_*.txt.ots
+
+------------------------------------------------------------
+📅 Dataset Validity
+------------------------------------------------------------
+Data span: 2025-05-08 → 2025-11-13
+Analysis version: v2.4
+Last proof timestamp: 2025-11-13 UTC
+Pipeline integrity: verified
+============================================================
