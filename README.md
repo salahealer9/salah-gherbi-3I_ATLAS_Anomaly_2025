@@ -1,9 +1,9 @@
-# 🪐 3I/ATLAS (C/2019 Y4) — Photometric Anomaly 2025
-📦 **Version 2.4 released:** Extended Photometry, Revised Pre-Perihelion Peak, and Post-Perihelion Deceleration  
-🧪 Includes NOT Morphological Validation, full MPC photometry to 2025-11-13, and updated cryptographic proofs.
+# 🪐 3I/ATLAS (C/2025 N1) — Photometric–Chromatic Anomaly & Δv-Based Dynamics (Version 2.5)
+📦 **Version 2.5 released:** Interstellar Anomaly Index (IAI), Δv-based dynamical assessment, extended post-perihelion photometry, and full reproducibility pipeline.
+🧭 Includes dual Δv impulse modelling (8 m/s minimal vs 25 m/s photometric), updated optical/chromatic diagnostics, and complete cryptographic sealing.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17477597.svg)](https://doi.org/10.5281/zenodo.17477597)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17609914.svg)](https://doi.org/10.5281/zenodo.17609914)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17692904.svg)](https://doi.org/10.5281/zenodo.17692904)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![OpenTimestamps Verified](https://img.shields.io/badge/Data%20Integrity-OpenTimestamps-orange)](https://opentimestamps.org)
 [![Reproducible Research](https://img.shields.io/badge/Reproducible%20Research-YES-brightgreen)](#reproducibility)
@@ -11,85 +11,110 @@
 
 ---
 
-## Overview
+# 🌌 Overview
 
-This repository contains the full photometric and chromatic analysis of the interstellar object **3I/ATLAS (C/2025 N1)** spanning **4,413 Minor Planet Center observations** from **2025-05-08 → 2025-11-13**.
+This repository hosts the complete photometric, chromatic, and dynamical anomaly analysis for the interstellar object **3I/ATLAS (C/2025 N1)**.
 
-The analysis reveals:
+Version 2.5 extends the dataset to **2025-11-21**, comprising **4,580 MPC observations**, refined colour indices, Δv modelling, and the introduction of the **Interstellar Anomaly Index (IAI ≈ 0.95)**.
 
-- ✔️ **A revised pre-perihelion optical activity peak**  
-  **2025-10-02 (±1 day)**, derived from the time derivative of the inverse magnitude.
+## Major results include:
 
-- ✔️ **A strong reddening event in \( g - o \)**  
-  \( \Delta(g-o) \approx +0.7 \) mag during July–Sept, coincident with the optical acceleration.
+- **Two sharp pre-perihelion activity spikes** (2025-09-10 & 2025-10-02) dominating the non-gravitational impulse
+- **Dual Δv calibration**:
+  - **8 m/s minimal** (sufficient for Loeb's ~10⁵ km Jupiter-approach geometry)
+  - **25 m/s photometric** (consistent with the fitted non-gravitational parameter A₁)
+- **Colour reddening event** Δ(g-o) ≈ 0.7 mag prior to perihelion
+- **Stable, dust-free post-perihelion morphology** (confirmed by Nordic Optical Telescope, 2025-11-09)
+- **First Interstellar Anomaly Index (IAI)** combining photometric, chromatic, dynamical, and morphological anomalies
+- **Full cryptographic verification** (SHA-256 + GPG + OpenTimestamps)
 
-- ✔️ **A post-perihelion deceleration phase**  
-  Observed between 2025-11-01 and 11-13.
-
-- ✔️ **No cometary tail or fragmentation**  
-  Confirmed independently by the 2.6-m Nordic Optical Telescope (2025-11-09).
-
-- ✔️ **Complete cryptographic provenance**  
-  All datasets, figures, CSVs, and scripts are sealed with:
-  - SHA-256 manifests
-  - GPG signatures
-  - Bitcoin-anchored OpenTimestamps proofs
-
-Version 2.4 supersedes v2.3 and presents the most complete optical record of 3I/ATLAS to date.
+Version 2.5 supersedes v2.4 and is the definitive preprint companion dataset.
 
 ---
 
-## Contents
+# 📁 Repository Structure (Updated for v2.5)
 
-| File / Folder                          | Description |
-|----------------------------------------|-------------|
-| `I3.txt`                               | Full MPC photometry (4,413 lines) |
-| `I3_Optical_Acceleration_Data.csv`     | Photometric activity proxy |
-| `I3_Color_Alerts_*.csv`                | Colour-index pairs (g–o, r–o) |
-| `I3_Color_Statistics_*.txt`            | Monthly/epochal colour analysis |
-| `I3_Optical_Acceleration_Trend_v2.png` | Updated optical acceleration plot |
-| `I3_Optical_Color_Correlation.png`     | Pre-perihelion optical–chromatic coupling |
-| `I3_Optical_Color_Correlation_postperi.png` | Post-perihelion deceleration |
-| `NOTpictures.pdf`                      | 4-panel NOT morphology analysis |
-| `atlas_optical_acceleration_v2.py`     | Activity proxy extractor |
-| `atlas_optical_color_correlation_v1.py`| Optical–colour coupling analysis |
-| `watch_mpc_colors_plot_v8_4.py`        | Colour-index extraction + alerts |
-| `update_I3_data.sh`                    | Automated MPC fetch + manifest + proofs |
-| `RUN_LOG.md`                           | Full timestamped run history (SHA-256 + OTS) |
-| `*_proof.txt, .asc, .ots`              | Cryptographic proofs |
+## Core Data
+
+| File | Description |
+|------|-------------|
+| `I3.txt` | Full MPC photometry (2025-05-08 → 2025-11-21) |
+| `I3_Optical_Acceleration_Data.csv` | Time series for optical acceleration proxy |
+| `I3_Color_Alerts_*.csv` | Filtered colour events |
+| `I3_Color_Statistics_*.txt` | Solar reference deltas & epoch summaries |
+
+## Figures (Updated)
+
+**Main Analysis:**
+- `I3_Optical_Acceleration_Trend_v2.png`
+- `I3_Optical_Color_Correlation.png`
+- `I3_Optical_Color_Correlation_postperi.png`
+
+**Δv Analysis Figures:**
+- `I3_Optical_Acceleration_DeltaV_Figure.png`
+- `I3_Optical_Acceleration_DeltaV_8_vs_25.png`
+- `I3_Optical_Acceleration_DeltaV_Overlay.png`
+
+**IAI Figures:**
+- `atlas_anomaly_components.png`
+- `iai_vs_eccentricity.png`
+
+## Analysis Scripts (v2.5)
+
+**Core Analysis:**
+- `atlas_optical_acceleration_v2.py`
+- `atlas_optical_color_correlation_v1.py`
+- `atlas_anomaly_index.py`
+- `iai_vs_eccentricity.py`
+
+**Δv Tools:**
+- `atlas_delta_v_from_optical_proxy.py`
+- `atlas_optical_dv_dual.py`
+- `plot_atlas_optical_accel_deltav.py`
+
+## Pipeline / Automation
+- `update_I3_data.sh` — MPC sync + manifest + proofs
+- `append_run_log_v3.sh` — Append cryptographic audit entries
+- `protect_atlas_v2_5.sh` — Seal manifests for v2.5
+- `RUN_LOG.md`
+
+## Manifests & Proofs
+- `manifest_v2_5.txt`
+- `manifest_v2_5.txt.sha256`
+- `manifest_v2_5.txt.asc`
+- `manifest_v2_5.txt.ots`
+- `I3_ATLAS_ProofBundle_YYYYMMDD_HHMM.zip`
 
 ---
 
-## 🔍 Scientific Results (v2.4)
+# 🔍 Scientific Highlights (v2.5)
 
-### ⭐ 1. Pre-Perihelion Optical Acceleration Peak
+## 1. Dual Δv-Based Dynamical Assessment
 
-- Peak detected at **2025-10-02**
-- Photometric activity increases smoothly from **July → Oct**
-- Acceleration proxy rises by **~10⁻³ (scaled units)**
+Two calibrated regimes:
 
-### ⭐ 2. Colour Reddening (July–Sept)
+| Regime | Δv | Use |
+|--------|----|-----|
+| **Minimal** | 8 m/s | Matches Loeb's ∼10⁵ km Jupiter shift |
+| **Photometric** | 25 m/s | Matches A₁ & optical acceleration amplitude |
 
-| Month | Mean g–o | Δ vs Solar | Interpretation |
-|-------|----------|------------|----------------|
-| July  | 0.61     | ~0         | Neutral / icy reflection |
-| Aug   | 0.94     | +0.32      | Dust/organic activation |
-| Sept  | 1.34     | +0.72      | Peak reddening |
+Both models show that **>90% of impulse** originates from two transient pre-perihelion events.
 
-### ⭐ 3. Post-Perihelion Deceleration (Nov)
+## 2. Interstellar Anomaly Index (IAI ≈ 0.95)
 
-- Optical acceleration turns **negative**
-- Magnitude increases by **+0.07 mag** since perihelion
-- Represents declining activity + dust coma clearing
+The IAI synthesises:
+- Photometric anomaly
+- Chromatic anomaly  
+- Dynamical anomaly
+- Morphological anomaly
 
-### ⭐ 4. NOT Morphology (2025-11-09)
+ATLAS ranks near the **extreme upper end** of known interstellar objects.
 
-- No tail
-- No coma asymmetry
-- No fragmentation
-- Stellar point-source morphology
-
-→ Confirms a short-lived, transient activity incompatible with a typical comet.
+## 3. Extended Post-Perihelion Evolution
+- Smooth fading to 2025-11-21
+- Negative optical acceleration
+- No additional outbursts
+- Morphology remains point-like
 
 ---
 
@@ -101,6 +126,11 @@ Full pipeline:
 ./update_I3_data.sh
 python atlas_optical_acceleration_v2.py
 python atlas_optical_color_correlation_v1.py
+python iai_vs_eccentricity.py
+python atlas_anomaly_index.py
+python atlas_delta_v_from_optical_proxy.py
+python atlas_optical_dv_dual.py
+python plot_atlas_optical_accel_deltav.py
 ```
 
 This generates:
@@ -119,50 +149,56 @@ pip install pandas numpy matplotlib scipy
 
 ---
 
-## 🔐 Data Integrity & Blockchain Verification
+# 🔐 Cryptographic Verification
 
-Each analysis run creates the following verification files:
+All critical outputs are authenticated using:
 
-### 📄 Generated Files
-- **`manifest_v2_4.txt`** - SHA-256 hashes of all data files
-- **`manifest_v2_4.txt.asc`** - GPG signature file
-- **`manifest_v2_4.txt.ots`** - Bitcoin timestamp proof via OpenTimestamps
-- **`RUN_LOG.md`** - Complete audit trail with timestamps
+- **SHA-256 digest manifests**
+- **GPG detached signatures** 
+- **Bitcoin-anchored timestamps** via OpenTimestamps
+
+## Verify with:
+
+```bash
+sha256sum -c manifest_v2_5.txt
+gpg --verify manifest_v2_5.txt.asc
+ots verify manifest_v2_5.txt.ots
+```
 
 ### ✅ Verification Commands
 
 #### Verify SHA-256 checksums
 ```bash
-sha256sum -c manifest_v2_4.txt
+sha256sum -c manifest_v2_5.txt
 ```
 
 #### Verify GPG signature authenticity
 ```bash
-gpg --verify manifest_v2_4.txt.asc
+gpg --verify manifest_v2_5.txt.asc
 ```
 
 #### Verify Bitcoin blockchain timestamp
 ```bash
-ots verify manifest_v2_4.txt.ots
+ots verify manifest_v2_5.txt.ots
 ```
 
 Any alteration will invalidate the hashes and cause verification to fail.
-The manifest and its .ots proofs ensure permanent, blockchain-verifiable authenticity (timestamp ≈ 2025-11-14 UTC).
+The manifest and its .ots proofs ensure permanent, blockchain-verifiable authenticity (timestamp ≈ 2025-11-24 UTC).
 
 ---
 
-## 📄 Citation (Version 2.4)
+## 📄 Citation (Version 2.5)
 
-Gherbi, Salah-Eddin (2025).
-*3I/ATLAS Photometric–Chromatic Anomaly (2025): Extended Photometry and Post-Perihelion Deceleration.*
-Zenodo. DOI: 10.5281/zenodo.17609914
+**Gherbi, Salah-Eddin** (2025).  
+*3I/ATLAS (C/2025 N1): Photometric–Chromatic Anomaly, Δv-Based Dynamics, and Interstellar Anomaly Index.*  
+Zenodo. [doi:10.5281/zenodo.17692904](https://doi.org/10.5281/zenodo.17692904)
 
-Concept DOI (all versions):
-10.5281/zenodo.17477597
+**Concept DOI** (all versions):  
+[doi:10.5281/zenodo.17477597](https://doi.org/10.5281/zenodo.17477597)
 
 ---
 
-## License
+## 📜 License
 
 All files are released under Creative Commons Attribution 4.0 International (CC BY 4.0).  
 Attribution required for reuse; derivatives permitted with citation.
@@ -179,6 +215,6 @@ Independent Researcher — United Kingdom
 ---
 
 **Repository:** [https://github.com/salahealer9/salah-gherbi-3I_ATLAS_Anomaly_2025](https://github.com/salahealer9/salah-gherbi-3I_ATLAS_Anomaly_2025)     
-**Zenodo DOI (v2.4):** [https://doi.org/10.5281/zenodo.17609914](https://doi.org/10.5281/zenodo.17609914)  
+**Zenodo DOI (v2.5):** [https://doi.org/10.5281/zenodo.17692904](https://doi.org/10.5281/zenodo.17692904)  
 **Concept DOI (all versions):** [https://doi.org/10.5281/zenodo.17477597](https://doi.org/10.5281/zenodo.17477597)
 
