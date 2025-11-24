@@ -1,0 +1,18 @@
+### 3I/ATLAS (C/2019 Y4) — Color Analysis Proof Manifest
+Version: v8.4
+Generated: 2025-10-31 18:27:06 UTC
+UTC Tag: 20251031_1827
+Author: Salah-Eddin Gherbi
+ORCID: https://orcid.org/0009-0005-4017-1095
+Repository: https://github.com/salahealer9/salah-gherbi-3I_ATLAS_Anomaly_2025
+Zenodo DOI: pending — to be minted after verification
+Primary Input: I3.txt
+SHA-256 (I3.txt): 7e8bc1901f5943eaed6238c463afc5c6b700204a79b08a72391da7f67e5b9330
+
+I3_Color_Statistics_20251031_1827.txt	8f1e1a8923a0df92d7895f40edc21464be988417c953f5691ddc9b7b69e1b273
+I3_Color_Alerts_20251031_1827.csv	b2799f9d8af700a7325c2f653c3bdba64e077f08fb3da03d58a5af232f129e0c
+I3_Color_Brightness_Timeline_20251031_1827.png	78f266ce94fb8e99f4d9e93bec5023b2774d1e51346e5617fddec2b63ded5e16
+
+To verify integrity:
+ ots stamp I3_Color_Proof_20251031_1827.txt
+ ots verify I3_Color_Proof_20251031_1827.txt.ots

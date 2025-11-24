@@ -1,0 +1,42 @@
+# 3I/ATLAS Research Proof Manifest (v2.3)
+Author: Salah-Eddin Gherbi
+Date: 2025-11-06 08:30:16 UTC
+----------------------------------
+atlas_optical_acceleration_v2.py                        f13cd657e8fa3931e72b5303fd9115ce05c8c47bb831463bbcf6b9c6e494b58e
+atlas_optical_color_correlation_v1.py                   cd49aee95b2a6731d71814cff56755ff7d6e13c19f85169f1673da14f572951c
+update_I3_data.sh                                       958909d569ab79a19a3cf76789308d136e6e73e1f9e2d959a03713334bbcd196
+append_run_log_v3.sh                                    5c9827b2191bce1519d563816511f89d78bb8cad39f61f1becc465f1f4dd587d
+I3.txt                                                  b4064cb2c153d072cf43898fcea6277d3e9ffdc5d96205f1693eb068ffb9e300
+I3_Color_Alerts_20251031_1736.csv                       5a62f548fc625d660de2baf5c78c0f25c56e1a10468a6c3e7e0e44b3c257f442
+I3_Color_Alerts_20251031_1740.csv                       5a62f548fc625d660de2baf5c78c0f25c56e1a10468a6c3e7e0e44b3c257f442
+I3_Color_Alerts_20251031_1741.csv                       5a62f548fc625d660de2baf5c78c0f25c56e1a10468a6c3e7e0e44b3c257f442
+I3_Color_Alerts_20251031_1759.csv                       5a62f548fc625d660de2baf5c78c0f25c56e1a10468a6c3e7e0e44b3c257f442
+I3_Color_Alerts_20251031_1827.csv                       b2799f9d8af700a7325c2f653c3bdba64e077f08fb3da03d58a5af232f129e0c
+I3_Color_Alerts_20251031_1832.csv                       b2799f9d8af700a7325c2f653c3bdba64e077f08fb3da03d58a5af232f129e0c
+I3_Color_Alerts_20251031_1848.csv                       b2799f9d8af700a7325c2f653c3bdba64e077f08fb3da03d58a5af232f129e0c
+I3_Color_Alerts_20251105_1757.csv                       b2799f9d8af700a7325c2f653c3bdba64e077f08fb3da03d58a5af232f129e0c
+I3_Color_Alerts_20251105_1834.csv                       b2799f9d8af700a7325c2f653c3bdba64e077f08fb3da03d58a5af232f129e0c
+I3_Color_Alerts_20251105_2037.csv                       5a62f548fc625d660de2baf5c78c0f25c56e1a10468a6c3e7e0e44b3c257f442
+I3_Color_Alerts_20251105_2123.csv                       5a62f548fc625d660de2baf5c78c0f25c56e1a10468a6c3e7e0e44b3c257f442
+I3_Optical_Acceleration_Data.csv                        29774d8950c7f6e0fa37f91277d38d3914af36ce53cb85d2855d61004a36b0c5
+I3_Color_Statistics_20251031_1736.txt                   38d2d93e806455fee78055095087c155a7b159bde9e205d70355f7bd4f1f4e80
+I3_Color_Statistics_20251031_1740.txt                   2bf38f7913f820f33fc2a04fbe43163836bef06e12e782621eb8558b8f465e7b
+I3_Color_Statistics_20251031_1741.txt                   9227032a6fcec926af1745b9b7deaf88597b85d1de08f184ef9f6f52b0400526
+I3_Color_Statistics_20251031_1759.txt                   93d92c17203443c6341623f2f8237eea0c299c31e61bed57b9644cf2aad20ac1
+I3_Color_Statistics_20251031_1827.txt                   8f1e1a8923a0df92d7895f40edc21464be988417c953f5691ddc9b7b69e1b273
+I3_Color_Statistics_20251031_1832.txt                   1491e5f5ddb90fbc94ffe1cf4fb6eeec1540571b4569994dcdd3791db973c62e
+I3_Color_Statistics_20251031_1848.txt                   7053a7634a6fc7cc13ef7fd0b5509f62d25c0e2e2b92bf82f5d0a43f7c951a1f
+I3_Color_Statistics_20251105_1757.txt                   2bde019a529d21d04f0ff02b53f7283e298564ea27133824ea169edbcb6df2f4
+I3_Color_Statistics_20251105_1834.txt                   a9fbc59d6ab95559a61f97354c0b9ac155357a9d77e1fb5dc529d89c011a8b7b
+I3_Color_Statistics_20251105_2037.txt                   b59d80c4542b53e1bc00239b50a81adf1dbba34d51b13dc58d3c8a215d5a7806
+I3_Color_Statistics_20251105_2123.txt                   f768bb9fca05a10a3747e2760f7049ad5b82afdfff992f6d715728cf29f6f78e
+I3_Color_Statistics_v7_8.txt                            f9fe4dc2f917a0017ed3ec1cc7e117d06c1e1ffa4e361656d2cc4fea275a61a1
+I3_Color_Statistics_v7_9.txt                            cf930be7b8954c2b11cf3d7dd0f12fe5a9c317c94b20065e5384fc9ac6d48ce1
+I3_Color_Statistics_v8.txt                              637266a746f4c62ed84de76c9cfb09503d5c9569182bc740c91f9ebe76d562c8
+I3_Optical_Acceleration_Trend_v2.png                    8b4597910cff9f382de3acb6bb95d4b641f604c0e870de5875180b3e1b7019fd
+I3_Optical_Color_Correlation.png                        a234d1740be75d6adc61c8a82998aa7ef49718f63340c4cf77acf5f5eea58fcf
+I3_Optical_Color_Correlation_postperi.png               5f3f3feae88d162905a528cf0780359daf4a2a8b7e369f257274546a1414bcc7
+3I_ATLAS_Anomaly_2025.tex                               d2872916c95e97c4378f6c7b9fd269675dd6af5d26ba78bbfd77f94b99bd18a1
+I3_ATLAS_v2_3_Analysis.pdf                              9eab5c7ecadd93ee9ec240f8f668f7697e1f5fe0e9c816fa05d9ccb43bd0e2c7
+README_PROOF_v2_3.md                                    fe6ce583760f8dfebe6e1de06642eba92b6507be1d477116ea54fe61c112ecde
+RUN_LOG.md                                              193c4114e889933048c13cf945b2426c6e9f99e7f1725209f856843b3076b977

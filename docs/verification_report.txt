@@ -1,0 +1,170 @@
+============================================================
+3I/ATLAS (C/2019 Y4) — Verification Report (v2)
+Generated: 2025-10-30 10:34:00 UTC
+============================================================
+
+Dataset: 3I_ATLAS_Anomaly_2025_v2
+DOI (Zenodo): 10.5281/zenodo.17477597
+Repository: https://github.com/salah-gherbi/3I_ATLAS_Anomaly_2025
+
+------------------------------------------------------------
+Integrity Scope
+------------------------------------------------------------
+This verification report confirms the integrity and provenance
+of all files included in the dataset release (v2, Oct 2025).
+Each file is referenced in the manifest and protected by
+OpenTimestamps cryptographic proofs anchored on the Bitcoin blockchain.
+
+------------------------------------------------------------
+Manifest Summary
+------------------------------------------------------------
+Manifest file: anomaly_manifest.txt
+SHA-256 hash:  (auto verified at runtime)
+Proof files:
+  • anomaly_manifest.txt.ots  — current attestation (Oct 30 2025)
+  • anomaly_manifest_20251030_ots.ots  — redundant attestation
+  • anomaly_manifest_20251029_1648.ots  — archived proof (v1 baseline)
+
+Files verified in manifest (subset shown):
+  I3.txt
+  I3_clean.csv
+  I3_lightcurve.png
+  I3_ATLAS_Dual_Anomaly.png
+  I3_Horizons_Residuals.csv
+  I3_Horizons_Residuals.png
+  I3_ATLAS_Horizons_Normalized.png
+  compare_horizons_anomaly.py
+  print_summary.py
+  README.md
+
+------------------------------------------------------------
+Verification Procedure
+------------------------------------------------------------
+To verify dataset integrity:
+
+1. Validate all local file checksums:
+   $ sha256sum -c anomaly_manifest.txt
+
+2. Verify the blockchain timestamp proof:
+   $ ots verify anomaly_manifest.txt.ots
+
+3. (Optional) Inspect attestation metadata:
+   $ ots info anomaly_manifest.txt.ots
+
+A “successfully verified” message indicates the dataset
+existed in its present form at or before the Bitcoin block
+timestamp corresponding to 2025-10-30 UTC.
+
+------------------------------------------------------------
+Attestation Summary
+------------------------------------------------------------
+Pending Attestations: 0
+Calendar Confirmations: ✓ OpenTimestamps.org | ✓ EternityWall | ✓ Catallaxy
+
+Proof-of-Existence anchored via:
+  Bitcoin mainnet (OpenTimestamps)
+  SHA-256 cryptographic digest tree
+
+------------------------------------------------------------
+Result
+------------------------------------------------------------
+✅ All files verified successfully
+✅ Manifest integrity validated
+✅ Timestamp proof confirmed (2025-10-30 UTC)
+
+This confirms the authenticity and immutability of the dataset
+as published on Zenodo and GitHub.
+
+------------------------------------------------------------
+Author
+------------------------------------------------------------
+Salah-Eddin Gherbi
+Independent Researcher — United Kingdom
+https://orcid.org/0009-0005-4017-1095
+============================================================
+
+============================================================
+3I/ATLAS (C/2019 Y4) — Verification Report (v2.1)
+Generated: 2025-10-30 16:42:00 UTC
+============================================================
+
+Dataset: 3I_ATLAS_Anomaly_2025_v2.1  
+DOI (Zenodo): 10.5281/zenodo.17483027  
+Repository: https://github.com/salah-gherbi/3I_ATLAS_Anomaly_2025  
+
+------------------------------------------------------------
+Integrity Scope
+------------------------------------------------------------
+This section documents the additional verification of **version 2.1**
+of the dataset, extending the previous release (v2.0) with
+ZTF cross-validation materials.  
+All files listed below have been integrated into the manifest
+and timestamped through OpenTimestamps on the Bitcoin blockchain.
+
+------------------------------------------------------------
+Manifest Summary
+------------------------------------------------------------
+Manifest file: `anomaly_manifest.txt`  
+Proof files:
+  • `anomaly_manifest_20251030_v21.ots` — latest attestation (v2.1)  
+  • `anomaly_manifest_20251030_v20.ots` — archived proof (v2.0)  
+  • `anomaly_manifest_20251029_1648.ots` — baseline (v1.0)
+
+Files newly verified in v2.1:
+  - `compare_ztf_I3_ATLAS.py`  
+  - `I3_MPC_Only.png`
+
+Previously verified files (unchanged):
+  - `I3.txt`  
+  - `I3_clean.csv`  
+  - `I3_lightcurve.png`  
+  - `I3_ATLAS_Dual_Anomaly.png`  
+  - `I3_Horizons_Residuals.csv`  
+  - `I3_Horizons_Residuals.png`  
+  - `I3_ATLAS_Horizons_Normalized.png`  
+  - `compare_horizons_anomaly.py`  
+  - `print_summary.py`  
+  - `README.md`
+
+------------------------------------------------------------
+Verification Procedure
+------------------------------------------------------------
+To verify the complete dataset integrity:
+
+```bash
+sha256sum -c anomaly_manifest.txt
+ots verify anomaly_manifest_20251030_v21.ots
+ots info anomaly_manifest_20251030_v21.ots   # optional
+```
+
+Successful verification confirms this dataset existed in its
+present form at or before 2025-10-30 16:42 UTC.
+
+Attestation Summary
+
+✓ Manifest hash validated via SHA-256
+✓ OpenTimestamps proof confirmed through:
+  • a.pool.opentimestamps.org
+  • b.pool.opentimestamps.org
+  • EternityWall calendar
+  • Catallaxy calendar
+
+Anchored on Bitcoin mainnet (OpenTimestamps Merkle Tree).
+All previous proofs remain valid and traceable.
+
+Result
+
+✅ Files verified successfully
+✅ Manifest integrity validated
+✅ New timestamp proof anchored (v2.1)
+✅ Dataset authenticity preserved across all versions
+
+This completes the continuous verification chain for
+3I/ATLAS (C/2019 Y4) Photometric Anomaly
+versions v1.0 → v2.0 → v2.1.
+
+Author
+
+Salah-Eddin Gherbi
+Independent Researcher — United Kingdom
+🔗 https://orcid.org/0009-0005-4017-1095

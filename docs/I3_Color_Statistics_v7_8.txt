@@ -1,0 +1,4 @@
+pair	mean_pre	mean_post	delta	sigma	trend
+g-r	0.5055656215457477				insufficient
+g-o	0.7783614515919641				insufficient
+r-o	0.12700623173210387				insufficient

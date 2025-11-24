@@ -1,0 +1,13 @@
+### 3I/ATLAS (C/2019 Y4) Color Statistics — v8.1
+Generated: 2025-10-31 17:40:06 UTC
+UTC Tag: 20251031_1740
+Source file: I3.txt
+SHA-256: 4da6ddcb94a7c7cba37ac226133ce0f1fd36acc34fa2a6a12ff2c77d61bfab35
+Perihelion: 2025-10-29
+Analyst: Salah-Eddin Gherbi (The Quantum Blueprint Project)
+------------------------------------------------------------
+pair	mean_pre	mean_post	delta	sigma	trend
+pair	mean_pre	mean_post	delta	sigma	trend
+g-r	0.5055656215457477				insufficient
+g-o	0.7783614515919641				insufficient
+r-o	0.12700623173210387				insufficient

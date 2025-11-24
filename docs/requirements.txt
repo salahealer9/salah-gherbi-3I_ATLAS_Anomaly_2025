@@ -1,0 +1,25 @@
+# Core analysis dependencies for 3I/ATLAS (C/2019 Y4) Photometric Anomaly 2025
+pandas>=2.0.0
+matplotlib>=3.8.0
+numpy>=1.25.0
+
+# Optional (for verifying timestamp proofs)
+opentimestamps-client>=0.7.0
+
+💡 Notes
+
+pandas, matplotlib, and numpy — for your main data parsing and plotting.
+opentimestamps-client — optional, but useful for independent verification of .ots proofs directly from the repo.
+Version numbers are modern and conservative (they’ll install fine even on minimal Python 3.11/3.12 setups).
+
+🧭 Usage instructions (for your README or Zenodo notes)
+
+# Clone and install dependencies
+git clone https://github.com/salah-gherbi/3I_ATLAS_Anomaly_2025
+cd 3I_ATLAS_Anomaly_2025
+python3 -m venv venv && source venv/bin/activate
+pip install -r requirements.txt
+
+Then run your analysis:
+
+python3 print_summary.py

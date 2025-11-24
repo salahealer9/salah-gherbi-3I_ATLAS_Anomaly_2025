@@ -1,0 +1,15 @@
+### 3I/ATLAS (C/2019 Y4) Color Statistics — v8.2
+Generated: 2025-10-31 17:41:17 UTC
+UTC Tag: 20251031_1741
+Source: I3.txt
+SHA-256: 4da6ddcb94a7c7cba37ac226133ce0f1fd36acc34fa2a6a12ff2c77d61bfab35
+Perihelion: 2025-10-29
+Author: Salah-Eddin Gherbi
+ORCID: https://orcid.org/0009-0005-4017-1095
+Repository: https://github.com/salahealer9/salah-gherbi-3I_ATLAS_Anomaly_2025
+------------------------------------------------------------
+pair	mean_pre	mean_post	delta	sigma	trend
+pair	mean_pre	mean_post	delta	sigma	trend
+g-r	0.5055656215457477				insufficient
+g-o	0.7783614515919641				insufficient
+r-o	0.12700623173210387				insufficient

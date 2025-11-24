@@ -1,0 +1,15 @@
+✅ Saved: I3_Color_Trend_v7.png
+
+📊 === Solar Comparison Summary ===
+ g-r: Mean=0.439 ± 0.246 | Solar=0.440
+     Δ=-0.001 (0.0σ) → BLUER
+ g-o: Mean=0.723 ± 0.463 | Solar=0.620
+     Δ=+0.103 (0.2σ) → REDDER
+ r-o: Mean=0.115 ± 0.135 | Solar=0.180
+     Δ=-0.065 (0.5σ) → BLUER
+
+🎨 Generating per-color evolution plots...
+✅ Saved: I3_g-r_evolution.png
+✅ Saved: I3_g-o_evolution.png
+✅ Saved: I3_r-o_evolution.png
+⚠️  Insufficient r–o data around perihelion.

@@ -1,0 +1,15 @@
+### 3I/ATLAS (C/2019 Y4) — Color Analysis Proof Manifest
+Version: v8.1
+Generated: 2025-10-31 17:40:07 UTC
+UTC Tag: 20251031_1740
+Author: Salah-Eddin Gherbi (The Quantum Blueprint Project)
+Primary Input: I3.txt
+SHA-256 (I3.txt): 4da6ddcb94a7c7cba37ac226133ce0f1fd36acc34fa2a6a12ff2c77d61bfab35
+
+I3_Color_Statistics_20251031_1740.txt	2bf38f7913f820f33fc2a04fbe43163836bef06e12e782621eb8558b8f465e7b
+I3_Color_Alerts_20251031_1740.csv	5a62f548fc625d660de2baf5c78c0f25c56e1a10468a6c3e7e0e44b3c257f442
+I3_Color_Trend_20251031_1740.png	c3d6f904ce00ae1fe2d0d94787a675149d3a754876a48141fe1ec73d53c16908
+
+To verify integrity:
+  ots stamp I3_Color_Proof_20251031_1740.txt
+  ots verify I3_Color_Proof_20251031_1740.txt.ots
