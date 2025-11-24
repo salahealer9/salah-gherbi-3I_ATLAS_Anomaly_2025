@@ -1,33 +1,46 @@
 cff-version: 1.2.0
 message: "If you use this dataset or analysis, please cite it as below."
+
 authors:
   - family-names: "Gherbi"
     given-names: "Salah-Eddin"
     orcid: "https://orcid.org/0009-0005-4017-1095"
-title: "3I/ATLAS (C/2025 N1) Photometric–Chromatic Anomaly: Optical Acceleration and Multi-Observatory Validation"
-version: "2.4"
-doi: "10.5281/zenodo.17609914"
-date-released: "2025-11-14"
+
+title: "3I/ATLAS (C/2025 N1): Photometric–Chromatic Anomaly, Optical Acceleration, Δv-Based Dynamics, and Interstellar Anomaly Index (IAI)"
+version: "2.5"
+doi: "10.5281/zenodo.17692904"
+date-released: "2025-11-24"
+
 repository-code: "https://github.com/salahealer9/salah-gherbi-3I_ATLAS_Anomaly_2025"
 license: "CC-BY-NC-4.0"
 type: dataset
+
 abstract: >
-  Version 2.4 extends the photometric-chromatic analysis of interstellar object 3I/ATLAS (C/2025 N1)
-  with complete Minor Planet Center coverage through 2025-11-13 (4,413 observations). The analysis reveals
-  a full activity cycle from pre-perihelion optical acceleration (peak: 2025-10-02) to post-perihelion
-  deceleration, validated by independent morphological evidence from Nordic Optical Telescope imaging.
-  The optical acceleration proxy demonstrates ~4-week early detection capability compared to orbital
-  non-gravitational solutions. All datasets, scripts, and verification artefacts are cryptographically
-  timestamped via OpenTimestamps (Bitcoin blockchain) and GPG-signed for complete reproducibility.
+  Version 2.5 provides the most complete and reproducible analysis of interstellar object
+  3I/ATLAS (C/2025 N1) to date, incorporating MPC photometry through 2025-11-21 (4,580 observations),
+  extended post-perihelion behaviour, Δv-based dynamical assessment, and the unified
+  Interstellar Anomaly Index (IAI). The dataset includes calibrated colour indices,
+  optical acceleration series, Δv time-series models, cumulative impulse comparisons,
+  and multi-axis anomaly scoring across photometric, chromatic, dynamical, and
+  morphological domains.
+
+  All data products, analysis scripts, and figures are sealed using SHA-256 digests,
+  GPG signatures, and OpenTimestamps anchoring to the Bitcoin blockchain, ensuring
+  full reproducibility and forensic-grade integrity. This release supersedes v2.4 and
+  consolidates the anomaly structure of 3I/ATLAS into a unified, timestamp-verified dataset.
+
 keywords:
   - 3I/ATLAS
   - C/2025 N1
   - interstellar object
   - photometric analysis
+  - colour indices
   - optical acceleration
   - non-gravitational forces
+  - delta-v modelling
+  - trajectory analysis
+  - Interstellar Anomaly Index
   - Minor Planet Center
-  - Nordic Optical Telescope
-  - morphological validation
-  - blockchain timestamping
   - reproducible research
+  - blockchain timestamping
+  - GPG signatures
