@@ -1,0 +1,91 @@
+============================================================
+3I / ATLAS (C/2025 N1) — Photometric & Chromatic Analysis
+Version 2.5 — November 2025
+Author: Salah-Eddin Gherbi
+ORCID: 0009-0005-4017-1095
+Repository: https://github.com/salahealer9/salah-gherbi-3I_ATLAS_Anomaly_2025
+Version DOI: 10.5281/zenodo.17692904
+Concept DOI: 10.5281/zenodo.17477597
+============================================================
+
+This manifest lists all files included in Version 2.5 of the dataset.
+All SHA-256 digests, GPG signatures, and OpenTimestamps proofs are
+contained in the ProofBundle ZIP and associated verification files.
+
+------------------------------------------------------------
+📦 Core Data Products
+------------------------------------------------------------
+I3.txt                                — Raw MPC photometry
+I3_color_*.csv                        — Computed colour-index pairs (g-o, g-r, r-o)
+I3_color_statistics_*.txt             — Solar-baseline colour deltas
+I3_color_brightness_timeline_*.png    — Multi-filter light-curve timeline
+
+------------------------------------------------------------
+📊 Optical & Chromatic Diagnostics
+------------------------------------------------------------
+I3_Optical_Acceleration_Data.csv      — Derived optical-acceleration time series
+I3_Optical_Acceleration_Trend_v2.png  — Optical acceleration trend (v2)
+I3_Optical_Color_Correlation.png      — Optical color–acceleration correlation
+I3_Optical_Color_Correlation_postperi.png — Post-perihelion color–acceleration correlation
+
+# NEW Δv diagnostic files (v2.5)
+I3_Optical_Acceleration_DeltaV_Figure.png   — Time-resolved Δv(t) (proxy → physical)
+I3_Optical_Acceleration_DeltaV_8_vs_25.png  — Dual-panel Δv(t) comparison (8 vs 25 m/s)
+I3_Optical_Acceleration_DeltaV_Overlay.png  — Overlay of cumulative Δv for both scalings
+
+------------------------------------------------------------
+📈 Interstellar Anomaly Index (IAI)
+------------------------------------------------------------
+iai_vs_eccentricity.py                — IAI vs eccentricity plot generator
+iai_vs_eccentricity.png               — Eccentricity–IAI diagram
+atlas_anomaly_index.py                — Component anomaly scoring
+atlas_anomaly_components.png          — Normalised anomaly-component plot
+
+------------------------------------------------------------
+🔐 Proof & Integrity Files
+------------------------------------------------------------
+I3_Color_Proof_*.txt                  — SHA-256 digests per run
+I3_Color_Proof_*.txt.asc              — GPG detached signatures
+I3_Color_Proof_*.txt.ots              — OpenTimestamps proofs (Bitcoin)
+RUN_LOG.md                            — Chronological full run log
+CITATION.cff                          — v2.5 citation metadata
+manifest_v2_5.txt                     — This file
+
+------------------------------------------------------------
+⚙️ Supporting Scripts (Pipeline Infrastructure)
+------------------------------------------------------------
+watch_mpc_colors_plot_v8_4.py         — Colour/solar comparison pipeline
+atlas_optical_acceleration_v2.py      — Optical acceleration extraction
+atlas_optical_color_correlation_v1.py — Colour–acceleration correlation
+update_I3_data.sh                     — Automated MPC update + GPG + OTS
+append_run_log_v3.sh                  — Append new run entries to RUN_LOG
+check_mpc_update.sh                   — Validate MPC file freshness
+cleanup_old_runs.sh                   — Remove obsolete intermediates
+weekly_status.sh                      — Weekly integrity snapshot
+
+# NEW Δv analysis scripts (v2.5)
+atlas_delta_v_from_optical_proxy.py   — Δv(t) reconstruction from optical proxy
+atlas_optical_dv_dual.py              — Dual Δv scaling (8 m/s & 25 m/s)
+plot_atlas_optical_accel_deltav.py     — Three-panel Δv(t) diagnostic plotter
+
+------------------------------------------------------------
+🔒 Reproducibility & Verification Chain
+------------------------------------------------------------
+All files authenticated using:
+ • SHA-256 checksums
+ • GPG detached signatures
+ • OpenTimestamps on the Bitcoin blockchain
+
+Verification commands:
+  sha256sum -c I3_Color_Proof_*.txt
+  gpg --verify I3_Color_Proof_*.txt.asc
+  ots verify I3_Color_Proof_*.txt.ots
+
+------------------------------------------------------------
+📅 Dataset Validity
+------------------------------------------------------------
+Data span: 2025-05-08 → 2025-11-21
+Analysis version: v2.5
+Last proof timestamp: 2025-11-21 UTC
+Pipeline integrity: VERIFIED
+============================================================
