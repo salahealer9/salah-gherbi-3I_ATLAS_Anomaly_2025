@@ -118,34 +118,90 @@ ATLAS ranks near the **extreme upper end** of known interstellar objects.
 
 ---
 
-## ▶️ Reproducing the Analysis
+# ▶️ How to Reproduce the Full v2.5 Analysis
 
-Full pipeline:
+Version 2.5 of the 3I/ATLAS analysis is fully reproducible using the Python scripts and pipeline tools provided in this repository. All outputs (CSV, PNG, manifests) are regenerated exactly as in the published release.
 
-```bash
-./update_I3_data.sh
-python atlas_optical_acceleration_v2.py
-python atlas_optical_color_correlation_v1.py
-python iai_vs_eccentricity.py
-python atlas_anomaly_index.py
-python atlas_delta_v_from_optical_proxy.py
-python atlas_optical_dv_dual.py
-python plot_atlas_optical_accel_deltav.py
-```
-
-This generates:
-
-Colour alerts
-Optical acceleration data
-Pre/post-perihelion plots
-New manifest + signatures
-OpenTimestamps Bitcoin anchoring
-
-Requirements:
+## 1. Install Dependencies
 
 ```bash
 pip install pandas numpy matplotlib scipy
 ```
+
+Or use the environment file:
+
+```bash
+conda env create -f environment.yml
+conda activate atlas2025
+```
+
+## 2. Update Data From the MPC
+
+Fetch the latest I3.txt, generate SHA-256 manifests, and timestamp everything:
+
+```bash
+./update_I3_data.sh
+```
+
+This performs:
+- MPC fetch
+- checksum generation  
+- GPG signing
+- OpenTimestamps anchoring
+- logging into RUN_LOG.md
+
+## 3. Generate Optical & Chromatic Diagnostics
+
+```bash
+python atlas_optical_acceleration_v2.py
+python atlas_optical_color_correlation_v1.py
+```
+
+Outputs:
+- I3_Optical_Acceleration_Data.csv
+- I3_Optical_Acceleration_Trend_v2.png
+- I3_Optical_Color_Correlation.png
+- I3_Optical_Color_Correlation_postperi.png
+
+## 4. Perform Δv-Based Dynamical Analysis (v2.5 Addition)
+
+```bash
+python atlas_delta_v_from_optical_proxy.py
+python plot_atlas_optical_accel_deltav.py
+python atlas_optical_dv_dual.py
+```
+
+Produces:
+- I3_Optical_Acceleration_DeltaV_Figure.png
+- I3_Optical_Acceleration_DeltaV_8_vs_25.png
+- I3_Optical_Acceleration_DeltaV_Overlay.png
+- printed Δb(km) tables for both 8 m/s and 25 m/s
+
+## 5. Compute the Interstellar Anomaly Index (IAI)
+
+```bash
+python atlas_anomaly_index.py
+python iai_vs_eccentricity.py
+```
+
+Outputs:
+- atlas_anomaly_components.png
+- iai_vs_eccentricity.png
+
+## 6. Seal the Results (Optional but Recommended)
+
+To reproduce the v2.5 cryptographic archival:
+
+```bash
+./protect_atlas_v2_5.sh manifest_v2_5.txt
+```
+
+This generates:
+- manifest_v2_5.txt.sha256
+- manifest_v2_5.txt.asc
+- manifest_v2_5.txt.ots
+
+All cryptographic events are logged in RUN_LOG.md.
 
 ---
 
