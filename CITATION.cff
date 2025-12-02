@@ -34,23 +34,40 @@ abstract: >
   validation.
 
 keywords:
-  - 3I/ATLAS
-  - C/2025 N1
-  - interstellar object
-  - Minor Planet Center
-  - MPC photometry
-  - colour indices
-  - photometric anomaly
-  - chromatic anomaly
-  - optical acceleration
-  - non-gravitational acceleration
-  - delta-v modelling
-  - trajectory perturbation
-  - Interstellar Anomaly Index
-  - Ni/Fe enrichment
-  - spectroscopic anomaly
-  - station consistency analysis
-  - reproducible research
-  - blockchain timestamping
-  - GPG signatures
-  - automated peak detection
+- 3I/ATLAS
+- C/2025 N1
+- interstellar object
+- interstellar comet
+- photometric analysis
+- colour indices
+- optical acceleration
+- non-gravitational forces
+- delta-v modelling
+- trajectory analysis
+- automated peak detection
+- optical impulse reconstruction
+- post-perihelion fading
+- colour–brightness evolution
+- chromatic anomaly
+- spectroscopic anomaly
+- Ni/Fe enrichment
+- Interstellar Anomaly Index (IAI)
+- anomaly quantification
+- Minor Planet Center (MPC)
+- reproducible research
+- data provenance
+- blockchain timestamping
+- GPG signatures
+- open-source astronomy
+- time-series analysis
+- activity modelling
+- comet activation
+- dust scattering
+- station-level validation
+- photometric noise discrimination
+- multi-observatory analysis
+- astronomical data pipelines
+- non-gravitational acceleration
+- observational astrophysics
+
+
