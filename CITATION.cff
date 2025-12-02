@@ -6,41 +6,51 @@ authors:
     given-names: "Salah-Eddin"
     orcid: "https://orcid.org/0009-0005-4017-1095"
 
-title: "3I/ATLAS (C/2025 N1): Photometric–Chromatic Anomaly, Optical Acceleration, Δv-Based Dynamics, and Interstellar Anomaly Index (IAI)"
-version: "2.5"
-doi: "10.5281/zenodo.17692904"
-date-released: "2025-11-24"
+title: "3I/ATLAS (C/2025 N1): Automated Peak Detection, Δv Correction, and Station-Consistency Validation"
+version: "2.6"
+doi: "10.5281/zenodo.17793630"
+date-released: "2025-12-02"
 
 repository-code: "https://github.com/salahealer9/salah-gherbi-3I_ATLAS_Anomaly_2025"
 license: "CC-BY-NC-4.0"
 type: dataset
 
 abstract: >
-  Version 2.5 provides the most complete and reproducible analysis of interstellar object
-  3I/ATLAS (C/2025 N1) to date, incorporating MPC photometry through 2025-11-21 (4,580 observations),
-  extended post-perihelion behaviour, Δv-based dynamical assessment, and the unified
-  Interstellar Anomaly Index (IAI). The dataset includes calibrated colour indices,
-  optical acceleration series, Δv time-series models, cumulative impulse comparisons,
-  and multi-axis anomaly scoring across photometric, chromatic, dynamical, and
-  morphological domains.
-
-  All data products, analysis scripts, and figures are sealed using SHA-256 digests,
-  GPG signatures, and OpenTimestamps anchoring to the Bitcoin blockchain, ensuring
-  full reproducibility and forensic-grade integrity. This release supersedes v2.4 and
-  consolidates the anomaly structure of 3I/ATLAS into a unified, timestamp-verified dataset.
+  Version 2.6 provides a fully automated, peak-resolved reanalysis of the photometric,
+  chromatic, and dynamical behaviour of the interstellar object 3I/ATLAS (C/2025 N1),
+  incorporating MPC photometry through 2025-12-01 (4,960 lines), newly reported GMOS
+  and UVES spectroscopy, and an expanded Interstellar Anomaly Index (IAI) that now
+  includes a compositional axis based on Ni/Fe enrichment. This version corrects the
+  timing of the first pre-perihelion acceleration spike, introduces automated peak
+  detection across all Δv and optical-acceleration plots, regenerates the Δv(t)
+  diagnostics using updated MPC data, and adds a station-by-station, time-normalised
+  validation demonstrating that late-November bumps in the aggregated optical
+  acceleration curve are photometric noise rather than physical acceleration events.
+  All figures, colour-index files, Δv reconstructions, station-consistency plots, and
+  analysis scripts are sealed using SHA-256 digests, GPG signatures, and OpenTimestamps
+  proofs to ensure full reproducibility and long-term forensic integrity. This version
+  supersedes v2.5 and should be cited when referencing automated peak detection, Δv
+  corrections, compositional anomaly inclusion, or post-perihelion station-consistency
+  validation.
 
 keywords:
   - 3I/ATLAS
   - C/2025 N1
   - interstellar object
-  - photometric analysis
-  - colour indices
-  - optical acceleration
-  - non-gravitational forces
-  - delta-v modelling
-  - trajectory analysis
-  - Interstellar Anomaly Index
   - Minor Planet Center
+  - MPC photometry
+  - colour indices
+  - photometric anomaly
+  - chromatic anomaly
+  - optical acceleration
+  - non-gravitational acceleration
+  - delta-v modelling
+  - trajectory perturbation
+  - Interstellar Anomaly Index
+  - Ni/Fe enrichment
+  - spectroscopic anomaly
+  - station consistency analysis
   - reproducible research
   - blockchain timestamping
   - GPG signatures
+  - automated peak detection
