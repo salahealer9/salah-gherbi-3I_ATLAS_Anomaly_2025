@@ -1,0 +1,93 @@
+============================================================
+3I / ATLAS (C/2025 N1) — Photometric, Chromatic & Δv Analysis  
+Version 2.6 — December 2025  
+Author: Salah-Eddin Gherbi  
+ORCID: 0009-0005-4017-1095  
+Repository: https://github.com/salahealer9/salah-gherbi-3I_ATLAS_Anomaly_2025  
+Version DOI: 10.5281/zenodo.17793630  
+Concept DOI: 10.5281/zenodo.17477597  
+============================================================
+
+This manifest lists all files included in Version 2.6 of the dataset.  
+All SHA-256 digests, GPG signatures, and OpenTimestamps proofs are  
+contained in the ProofBundle ZIP and associated verification files.
+
+------------------------------------------------------------
+📦 Core Data Products
+------------------------------------------------------------
+I3.txt                                — Raw MPC photometry (ingested to 2025-12-01)
+I3_Optical_Acceleration_Data.csv      — Derived optical-acceleration time series
+I3_Color_Alerts_*.csv                 — Auto-generated colour index alerts
+I3_Color_Statistics_*.txt             — Solar-baseline colour deltas
+
+# NEW (v2.6)
+I3_Color_Brightness_Timeline_*.png    — Post-perihelion g-band fading timeline
+
+------------------------------------------------------------
+📊 Optical, Chromatic & Δv Diagnostics
+------------------------------------------------------------
+I3_Optical_Acceleration_Trend_v2.png      — Updated optical acceleration curve
+I3_Optical_Color_Correlation.png          — Colour–acceleration correlation (pre-perihelion)
+I3_Optical_Color_Correlation_postperi.png — Post-perihelion fading analysis
+
+I3_Optical_Acceleration_DeltaV_Figure.png    — Time-resolved Δv(t)
+I3_Optical_Acceleration_DeltaV_8_vs_25.png   — Δv comparison: 8 m/s vs 25 m/s
+I3_Optical_Acceleration_DeltaV_Overlay.png   — Cumulative Δv(t) overlay
+
+# NEW (v2.6)
+station_collective_effect_corrected.png      — Station-by-station noise validation (two windows)
+
+------------------------------------------------------------
+📈 Interstellar Anomaly Index (IAI)
+------------------------------------------------------------
+atlas_anomaly_index.py                — Component scoring (photometric/chromatic/morphological)
+atlas_anomaly_components.png          — Normalised anomaly-component radar plot
+iai_vs_eccentricity.py                — IAI vs eccentricity plot generator
+iai_vs_eccentricity.png               — (e–IAI) diagram
+
+------------------------------------------------------------
+⚙️ Analysis & Pipeline Scripts (Updated for v2.6)
+------------------------------------------------------------
+watch_mpc_colors_plot_v8_4.py         — Multi-filter colour and solar baseline pipeline
+
+# UPDATED (v2.6)
+atlas_optical_acceleration_v2.py      — Automatic peak detection (replaces manual dates)
+atlas_optical_color_correlation_v1.py — Auto-loads latest colour CSV
+plot_station_residuals.py             — Multi-window station-consistency analysis
+
+# Δv Framework
+atlas_delta_v_from_optical_proxy.py   — Δv(t) reconstruction from optical proxy
+atlas_optical_dv_dual.py              — Dual-scaling Δv (8 m/s, 25 m/s)
+plot_atlas_optical_accel_deltav.py     — Three-panel Δv(t) diagnostic plotter
+
+------------------------------------------------------------
+🔐 Reproducibility & Verification Chain
+------------------------------------------------------------
+manifest_v2_6.txt                     — This file
+manifest_v2_6.txt.asc                 — GPG detached signature
+manifest_v2_6.txt.ots                 — OpenTimestamps proof
+manifest_v2_6.txt.sha256              — SHA-256 digest list
+
+RUN_LOG.md                            — Timestamped chronological run log
+
+I3_Color_Proof_*.txt                  — Per-run checksums
+I3_Color_Proof_*.txt.asc              — GPG signatures
+I3_Color_Proof_*.txt.ots              — Bitcoin OTS proofs
+
+Verification commands:
+  sha256sum -c manifest_v2_6.txt
+  gpg --verify manifest_v2_6.txt.asc
+  ots verify manifest_v2_6.txt.ots
+
+------------------------------------------------------------
+📅 Dataset Validity & Coverage
+------------------------------------------------------------
+Data span:          2025-05-08 → 2025-12-01  
+Observations:       4,960 MPC lines  
+Analysis version:   v2.6  
+Δv framework:       Automated peak detection enabled  
+Noise validation:   Two-window station-consistency analysis (Nov 22–25, Nov 28–Dec 01)  
+Pipeline integrity: VERIFIED  
+Last proof timestamp: 2025-12-01 UTC  
+
+============================================================
